@@ -132,6 +132,9 @@
 		}
 		
 		function page_title_error() {
+		
+			qa_html_theme_base::page_title_error();
+			
 			if(qa_opt('q2apro_ajax_usersearch_enabled')) {
 				if($this->template=='users') {
 					$this->output('
@@ -144,7 +147,6 @@
 				}
 			} // end q2apro_ajax_usersearch_enabled
 			
-			qa_html_theme_base::page_title_error();
 		}
 
 	} // end qa_html_theme_layer
