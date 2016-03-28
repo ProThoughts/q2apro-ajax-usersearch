@@ -36,7 +36,7 @@
 									$(".q2apro_us_progress").show();
 									$.ajax({
 										 type: "POST",
-										 url: "'.qa_path('q2apro_usersearch', null, qa_opt('site_url'), null, null).'",
+										 url: "'.qa_path('q2apro_usersearch').'",
 										 data: { ajax:us_username },
 										 error: function() { 
 											console.log("server: ajax error");
